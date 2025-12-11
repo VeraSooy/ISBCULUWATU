@@ -1,0 +1,88 @@
+position:relative;border-radius:16px;overflow:hidden;background:#0f1117;border:1px solid var(--border);box-shadow:var(--shadow)
+    }
+    .hero-media::before{
+      content:"";position:absolute;inset:0;background:url('images/hero.jpg') center/cover no-repeat;
+      opacity:.9;mix-blend:normal
+    }
+    .hero-media::after{
+      content:"";position:absolute;inset:0;background:
+        linear-gradient(10deg, rgba(0,0,0,.4), transparent 60%),
+        radial-gradient(600px 300px at 90% 110%, rgba(241,209,0,.2), transparent 60%);
+    }
+    .hero-note{
+      position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);
+      border:1px solid var(--border);border-radius:12px;padding:8px 12px;color:var(--muted);font-size:12px
+    }
+    @media(max-width:860px){.hero-wrap{grid-template-columns:1fr;gap:20px}}
+    /* Sections */
+    section{padding:50px 0;border-bottom:1px solid var(--border)}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+    .section-title .bar{width:18px;height:18px;border-radius:4px;background:var(--accent)}
+    h2{margin:0;font-size:28px}
+    .grid{display:grid;gap:18px}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+    @media(max-width:860px){.cols-3,.cols-2{grid-template-columns:1fr}}
+    .card{
+      background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:none
+    }
+    .muted{color:var(--muted)}
+    /* Pricing */
+    .price{
+      display:flex;justify-content:center;gap:18px;flex-wrap:wrap
+    }
+    .price .plan{
+      flex:1 1 340px;max-width:520px;background:linear-gradient(180deg,#121317,#0f1117);
+      border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)
+    }
+    .plan h3{margin:0 0 8px;font-size:20px}
+    .plan .tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#16181f;color:var(--muted);font-size:12px;border:1px solid var(--border)}
+    .plan ul{list-style:none;margin:12px 0 0;padding:0}
+    .plan li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed #1d2027}
+    .plan li:last-child{border-bottom:0}
+    .plan .amount{font-weight:700;color:var(--accent)}
+    .note{font-size:12px;color:var(--muted);margin-top:10px}
+    /* Coaches */
+    .coach{
+      display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:start
+    }
+    .coach img{width:140px;height:140px;object-fit:cover;border:1px solid var(--border)}
+    .coach h4{margin:0 0 6px}
+    /* Footer */
+    footer{padding:30px 0;color:var(--muted)}
+    footer a{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> ISBC Bali</div>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="cta">
+        <a class="btn btn-outline" href="https://www.instagram.com/isbc.bali?igsh=MWF3ZTlzd3IxdHB0eQ==" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-accent" href="#pricing">Join now</a>
+        <button class="hamburger" onclick="toggleMenu()">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <span class="badge">Open-air • Boxing • Community</span>
+        <h1>Open-Air Boxing & Fitness in Bali</h1>
+        <p>
+          Train outside with everything you need: gloves, wraps, bags, and expert coaches.
+          We’re a family — after sessions we run together, take ice baths, grab coffee, chase sunsets,
+          play games, and make friends for life.
+        </p>
+        <div class="actions">
+          <a class="btn btn-accent" href="#pricing">See prices</a>
+          <a class="btn" href="https://www.instagram.com/isbc.
